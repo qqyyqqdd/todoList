@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todoList</title>
+    <link rel="stylesheet" href="fonts/iconfont.css">
+    <link rel="stylesheet" href="todoList.css">
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="todoList.js"></script>
+</head>
+<body>
+    <nav>
+        <div class="input container">
+            <h1>TODOList</h1>
+            <div class="input-area">
+                <input type="text" placeholder="please input here">
+                <a href="javascript:;">submit</a>
+            </div>       
+        </div>
+    </nav>
+    <section class="container ongoing">
+        <div class="title">
+            <h2>未完成...</h2>
+            <p class="sum">3</p>
+        </div>
+        <div class="list">
+            <ul>
+                <li>
+                    <label for="ongoing1" class="iconfont icon-check-box-blank"></label>
+                    <input type="checkbox" name="" id="ongoing1" hidden>
+                    <span>未完成</span>                    
+                    <a class="iconfont icon-guanbi" href="javascript:;" hidden></a>
+                    <a class="iconfont icon-xiugai" href="javascript:;" hidden></a>
+                </li>
+                <li>
+                    <label for="ongoing2" class="iconfont icon-check-box-blank"></label>
+                    <input type="checkbox" name="" id="ongoing2" hidden>
+                    <span>未完成</span>
+                    <a class="iconfont icon-guanbi" href="javascript:;" hidden></a>
+                </li>
+                <li>
+                    <label for="ongoing2" class="iconfont icon-check-box-blank"></label>
+                    <input type="checkbox" name="" id="ongoing2" hidden>
+                    <span>未完成</span>
+                    <a class="iconfont icon-guanbi" href="javascript:;" hidden></a>
+                </li>
+            </ul>
+            <a href="javascript:;" class="alldone">
+                <i class="iconfont icon-wancheng"></i> &nbsp 完成全部
+            </a>
+            <a id='clear-on' class="clear" href="javascript:;">  
+                <i class="iconfont icon-qingkong"></i> &nbsp 清空列表
+            </a>
+        </div>
+    </section>
+    <section class="container done">
+        <div class="title">
+            <h2>已完成√</h2>
+            <p class="sum">3</p>
+        </div>
+        <div class="list">
+            <ul>
+                <li>
+                    <label for="ongoing1" class="iconfont icon-baseline-check_box-px"></label>
+                    <input type="checkbox" name="" id="ongoing1" hidden>
+                    <span>完成</span>
+                </li>
+                <li>
+                    <label for="ongoing2" class="iconfont icon-baseline-check_box-px"></label>
+                    <input type="checkbox" name="" id="ongoing2" hidden>
+                    <span>完成</span>
+                </li>
+                <li>
+                    <label for="ongoing2" class="iconfont icon-baseline-check_box-px"></label>
+                    <input type="checkbox" name="" id="ongoing2" hidden>
+                    <span>完成</span>
+                </li>
+            </ul>
+            <a id='clear-done' class="clear" href="javascript:;"><i class="iconfont icon-qingkong"></i> 清空列表</a>
+        </div>
+    </section>
+</body>
+</html>

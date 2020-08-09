@@ -1,0 +1,135 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+a {
+    text-decoration: none;
+}
+ul,ol {
+    list-style: none;
+}
+nav {
+    height: 100px;
+    background-color: #595959;
+}
+.container {
+    width: 800px;
+    margin: 0 auto;
+    /* background-color: #000; */
+}
+
+/* 头部输入 */
+.input {
+    height: 50px;
+    padding-top: 50px;
+}
+.input h1 {
+    line-height: 50px;
+    color: #ffc900;
+    display: block;
+    float: left;
+    font-size: 50px;
+}
+.input-area {
+    float: right;
+    margin: 10px 0 0;
+}
+.input-area input[type='text'] {
+    line-height: 30px;
+    padding-left: 0.5em;
+    width: 240px;
+    float: left;
+}
+.input-area a {
+    display: block;
+    margin-left: 10px;
+    float: left;
+    width: 90px;
+    line-height: 30px;
+    text-align: center;
+    background-color: #ffc900;
+    color: #595959;
+    border: 2px outset #e7b604;
+    border-radius: 4px;
+}
+.input-area a:hover {
+    border-style: inset;
+}
+
+/* 未完成 */
+.done,
+.ongoing {
+    color: #595959;
+    margin-top: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 1px solid #999;
+}
+.title {
+    overflow: hidden;
+    line-height: 50px;
+    /* border: 1px solid #000; */
+}
+h2 {
+    float: left;
+}
+.sum {
+    margin: 15px;
+    float: right;
+    font-size: 14px;
+    line-height: 20px;
+    width: 20px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #b9b9b9;
+}
+.list {
+    /* border: 1px solid #000; */
+    margin: 10px 1em;
+    overflow: hidden;
+}
+.list ul {
+    border-collapse: collapse;
+}
+.list li {
+    border-bottom: 1px solid #eee;
+}
+.list label {
+    display: inline-block;
+    margin: 10px;
+    color: #ffc900;
+}
+
+.list li a.icon-guanbi,
+.list li a.icon-xiugai{
+    float: right;
+    line-height: 36px;
+    font-size: 14px;
+    margin-right: 10px;
+    color: #ff5338;
+    /* display: block; */
+}
+.list li a.icon-xiugai{
+    color: #fe8c00;
+}
+.alldone,
+.clear {
+    float: left;
+    display: block;
+    margin: 20px 20px 0 0;
+    color: #b9b9b9;
+    font-size: 14px;
+}
+.alldone:hover{
+    color: #fe8c00;
+}
+.clear:hover {
+    color: #ff5338;
+}
+
+/* 已完成 */
+.done .list ul{
+    opacity: 0.6;
+}

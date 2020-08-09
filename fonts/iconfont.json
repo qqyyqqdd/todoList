@@ -1,0 +1,58 @@
+{
+  "id": "1994742",
+  "name": "todoList",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "11920109",
+      "name": "完成",
+      "font_class": "wancheng",
+      "unicode": "e612",
+      "unicode_decimal": 58898
+    },
+    {
+      "icon_id": "16208931",
+      "name": "修 改",
+      "font_class": "xiugai",
+      "unicode": "e653",
+      "unicode_decimal": 58963
+    },
+    {
+      "icon_id": "2805808",
+      "name": "清空",
+      "font_class": "qingkong",
+      "unicode": "e625",
+      "unicode_decimal": 58917
+    },
+    {
+      "icon_id": "5743255",
+      "name": "关  闭",
+      "font_class": "guanbi",
+      "unicode": "e610",
+      "unicode_decimal": 58896
+    },
+    {
+      "icon_id": "8554290",
+      "name": "提交",
+      "font_class": "tubiao_tijiao",
+      "unicode": "e63b",
+      "unicode_decimal": 58939
+    },
+    {
+      "icon_id": "1410252",
+      "name": "check-box-blank",
+      "font_class": "check-box-blank",
+      "unicode": "e63e",
+      "unicode_decimal": 58942
+    },
+    {
+      "icon_id": "7826095",
+      "name": "check_box",
+      "font_class": "baseline-check_box-px",
+      "unicode": "e616",
+      "unicode_decimal": 58902
+    }
+  ]
+}
