@@ -7,20 +7,38 @@ $(function(){
         if(event.key == 'Enter') {
             addItem();
         }
-    })
+    });
     $('.list ul').on('mouseover','li',function(){
         $(this).children('a').stop().show(300);
     })
     $('.list ul').on('mouseout','li',function(){
         $(this).children('a').stop().hide(300);
-    })
+    });
     // 删除事项
     $('.list ul').on('click','li a.icon-guanbi',function(){
         delLocalStorage($(this).parent());
         $(this).parent().hide(300,function(){
             loadItem();
         });
-    })
+    });
+    // 修改事项
+    $('.ongoing ul').on('click','li a.icon-xiugai',function(){
+        let txt = $(this).siblings('span');
+        let input = $('<input type="text" value="'+txt.html()+'">');
+        $(this).siblings('label').after(input);
+        txt.remove();
+        $(this).prop('disabled',true);
+        input.focus();
+        input.on('blur',function(){
+            let newTxt = $(this).val();
+            // console.log(newTxt);
+            let local = getLocalStorage(false);
+            let index = local.length-$(this).parent().index()-1;
+            local[index].title = newTxt;
+            saveLocalStorage(JSON.stringify(local),false);
+            loadItem();
+        });
+    });
     // 清空某一列表
     $('a.clear').on('click',function(){
         if($(this).prop('id')=='clear-on'){
@@ -133,6 +151,13 @@ function moveToOn(e) {
         addItem(null,item);
     });
 }
+// 修改事项title
+function changeTitle(){
+    // let txt = $(this).html();
+    console.log($(this));
+}
+
+
 // 本地存储相关操作
 // 读取本地存储 
 // return [{}]
